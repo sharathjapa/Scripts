@@ -1,0 +1,5 @@
+#!/bin/bash
+ifconfig en0 | grep -w inet | awk '{ print $2,'\n'$6 }'
+ifconfig en1 | grep -w inet | awk '{ print $2,'\n'$6 }'
+ifconfig en2 | grep -w inet | awk '{ print $2,'\n'$6 }'
+ifconfig enp0s3 | grep -w inet | awk '{ print $2,'\n'$3,'\n'$4 }'
